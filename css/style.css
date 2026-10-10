@@ -1,0 +1,82 @@
+.conteudo {
+    padding: 30px;
+}
+
+.cabecalho-tarefas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cabecalho-tarefas h1 {
+    margin: 0;
+}
+
+.btn-adicionar {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Estilo para celulares */
+@media (max-width: 600px) {
+    .conteudo {
+        padding: 20px;
+    }
+
+    .cabecalho-tarefas {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .cabecalho-tarefas h1 {
+        font-size: 28px;
+    }
+}
+.resumo-tarefas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.resumo-tarefas .card {
+    width: 100% !important;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .resumo-tarefas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+.filtros-tarefas {
+    margin-top: 35px;
+    padding: 0 30px;
+}
+
+.filtros-tarefas .nav {
+    gap: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .filtros-tarefas {
+        margin-top: 25px;
+        padding: 0 20px;
+    }
+
+    .filtros-tarefas .nav {
+        gap: 8px;
+    }
+}
