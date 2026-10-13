@@ -80,3 +80,141 @@
         gap: 8px;
     }
 }
+.lista-tarefas {
+    margin-top: 35px;
+    padding: 0 20px;
+}
+
+.lista-tarefas h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background-color: #14181d;
+    border: 1px solid #343a42;
+    border-radius: 12px;
+
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+.tarefa input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #2563eb;
+    flex-shrink: 0;
+}
+
+.tarefa-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tarefa-info p {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.tarefa-info span {
+    font-size: 12px;
+    color: #60a5fa;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .lista-tarefas {
+        padding: 0 15px;
+    }
+}
+/* Formulário de tarefas */
+.formulario-tarefa {
+    display: none;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.formulario-tarefa h2 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Organização dos campos */
+#formTarefa {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Labels */
+#formTarefa label {
+    color: #e5e7eb;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Campos de entrada */
+#formTarefa input,
+#formTarefa textarea,
+#formTarefa select {
+    width: 100%;
+    background-color: #0d1117;
+    color: #ffffff;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Destaque ao selecionar um campo */
+#formTarefa input:focus,
+#formTarefa textarea:focus,
+#formTarefa select:focus {
+    border-color: #2563eb;
+}
+
+/* Descrição */
+#formTarefa textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* Botão salvar */
+#formTarefa button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+#formTarefa button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .formulario-tarefa {
+        padding: 18px;
+        max-width: 100%;
+    }
+}
